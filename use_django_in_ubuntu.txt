@@ -14,6 +14,7 @@ C. Python3 설치
 --> bash terminal에서 
 sudo apt install python3-pip 
 입력하면 할 수 있어 
+* 단, 
 
 D. Python 가상환경에서 Django사용하기
 * 우리가 가상 환경을 만드는 데 사용할 라이브러리들은 virtualenvwrapper(리눅스, 맥) 그리고 virtualenvwrapper-win(윈도우)이다. 둘다 virtualenv 도구를 사용한다. wrapper 도구는 모든 플랫폼의 인터페이스를 관리하기 위한 일관적인 인터페이스를 생성한다.
@@ -52,6 +53,16 @@ H. 이후에 과정은 거의 유사하다.
 * python3 manage.py runserver
 
 
+I.
+sudo apt-get install python3-pip
+pip3 install virtualenv
+virtualenv venv
+source venv/bin/activate
+pip3 install django
+django-admin startproject app .
+python3 manage.py runserver
+Windows Chrome: https://127.0.0.1:8000 port forwarding is already enabled by default from WSL
+
 왜 굳이 Linux?
 * 인공지능, 머신러닝, 클라우드 -> OS의 일부 기능들을 써야한다.
 * OS 개발자야. 우리가. kernel 개발자야. 
@@ -62,19 +73,4 @@ H. 이후에 과정은 거의 유사하다.
 코어는 만들어두고, 코어에 연동되는 로직을 뚫어둔거야.
 : 통로를 딱 맞게 코딩해두면 된다.
 
-아두이노 센서 필요하면 말해
-나 집에 좀 있어
-
-필요한 센서 있으면 음.. 종류..?
-
-나 집에 찾아보면 몇개 있을거ㅑㅇㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
-기본적인 LED나 소리센서나 음.. 조도센서랑 초음파센서랑 음.. 또 음.. 등등?
-
-
-만약 너네 만들고 싶은거에 필요한 센서가 뭐 있는지 말하면
-내가 있는거에서 찾아볼게!!
-
-터치감지
-소리감지
-충격감지(?)
 
